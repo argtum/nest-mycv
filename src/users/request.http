@@ -6,3 +6,21 @@ content-type: application/json
   "email": "abc@test.ru",
   "password": "qwert"
 }
+
+### Find a particular user with a given ID
+GET http://localhost:3000/auth/1
+
+### Find all users with a given email
+GET http://localhost:3000/auth/?email=abc@test.ru
+
+### Delete a user with a given ID
+DELETE http://localhost:3000/auth/2
+
+### Update a user
+PATCH http://localhost:3000/auth/1
+content-type: application/json
+
+{
+  "email": "bbb@test.ru",
+  "password": "wsxcde"
+}
