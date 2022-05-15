@@ -3,9 +3,24 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "abc@test.ru",
+  "email": "abc123000@test.ru",
   "password": "qwert"
 }
+
+### Sing in
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "abc123000@test.ru",
+  "password": "qwert"
+}
+
+### Get currently singed user
+GET http://localhost:3000/auth/whoami
+
+### Sing out
+POST http://localhost:3000/auth/singout
 
 ### Find a particular user with a given ID
 GET http://localhost:3000/auth/1
